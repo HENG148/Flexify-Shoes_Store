@@ -1,13 +1,257 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'sen', sans-serif;
+  /* font-family: "Poppins",sans-serif; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.input-box {
+  /* font-family: 'sen', sans-serif; */
+  border: 2px solid #000;
+  width: 100%;
+  border-radius: 7px;
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+  padding-left: 10px;
+  font-size: 1.05rem;
 }
+
+input::placeholder {
+  font-size: 1.05rem;
+  font-weight: 500;
+  font-family: 'sen', sans-serif;
+}
+
+.x {
+  border: 1.5px solid #000;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.log-link {
+  border: 1px solid #000;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.hover-link:hover,
+.hover-link:active {
+  /* color: #1813D7; */
+  /* transition: all 0.3s; */
+}
+
+.log-link:hover, 
+.log-link:active {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.log-link-s {
+  background-color: #000;
+  color: #fff;
+}
+
+.log-link-s:hover,
+.log-link-s::after {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s;
+}
+
+/* .login {
+  color: #fff;
+} */
+
+/* .gg {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  background-color: antiquewhite;
+  width: 35rem;
+} */
+
+.gg {
+  display: flex;
+  align-items: center;
+}
+
+/* .gg:hover,
+.gg:focus {
+  outline: 1.5px solid #c2c3c4;
+} */
+
+.hh {
+  border: none;
+}
+
+.hh {
+  border: 1.5px solid #c2c3c4; 
+  border-right: #c2c3c4;
+  width: 50rem;
+  height: 3rem;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.hh::placeholder {
+  font-size: 1.1rem;
+}
+
+.hh:focus {
+  outline: 1.5px solid #c2c3c4;
+}
+
+.hh:hover {
+  outline: 1.5px solid #c2c3c4;
+}
+
+.ff {
+  font-size: 1.5rem;
+  position: relative;
+  left: 1rem;
+}
+
+.rr {
+  background-color: #c2c3c4;
+  height: 3rem;
+  display: flex; 
+  align-items: center;
+  width: 4rem;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: inherit;
+}
+
+.rr:hover,
+.rr:focus {
+  outline: 1.5px solid #c2c3c4;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+/* .hh {
+  width: 25rem;
+  height: 3rem;
+  border: 2px solid #000;
+} */
+
+.shopping {
+  border: 5px solid #000;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.shopping {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.adidas {
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+.new_balance {
+  padding-left: 24px;
+  padding-right: 24px; 
+}
+
+.puma {
+  padding-left: 58px;
+  padding-right: 58px;
+}
+
+/* @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider .slide-track {
+  animation: scroll 10s linear infinite;
+  display: flex;
+  /* gap: 20rem; 
+  width: calc(250px * 14); 
+} */
+
+/* @keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}
+
+.slider {
+  animation: scroll 10s linear infinite;
+  overflow: hidden;
+  width: auto;
+} */
+
+/* @keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: aliceblue;
+  white-space: nowrap;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  /* display: inline-block; 
+  animation: 5s slide infinite  linear;
+} */
+
+.ji {
+  font-size: 1.3rem;
+}
+
+.pol {
+  border: 1.5px solid #000;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.tt:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+  /* .ouy {
+    width: 10rem;
+  } */
